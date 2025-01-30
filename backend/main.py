@@ -132,7 +132,7 @@ async def dashboard_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
     if update.effective_user.username == admin_username:
         try:
             analytics_data = await get_analytics_data()
-            dashboard_url = "http://localhost:5000"  # Replace with actual dashboard URL
+            dashboard_url = "http://localhost:5173"  # Replace with actual dashboard URL
 
             await update.message.reply_text(
                 f"📊 **Analytics Dashboard:** [View Here]({dashboard_url})\n\n"
